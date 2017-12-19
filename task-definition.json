@@ -1,0 +1,33 @@
+{
+    "containerDescriptors": [
+        {
+            "command": "",
+            "type": "DOCKER",
+            "properties": {
+                "image": "tdgp/stagetos3:latest"
+            }
+        }
+    ],
+    "description": "Stage data from a directory into an S3 bucket",
+    "inputPortDescriptors": [
+        {
+            "required": true,
+            "type": "directory",
+            "description": "The source directory",
+            "name": "data"
+        },
+        {
+            "required": true,
+            "type": "string",
+            "description": "full S3 URL where the data will be written.",
+            "name": "destination"
+        }
+    ],
+    "version": "0.0.2",
+    "outputPortDescriptors": [],
+    "properties": {
+        "isPublic": true,
+        "timeout": 7200
+    },
+    "name": "StageDataToS3"
+}
