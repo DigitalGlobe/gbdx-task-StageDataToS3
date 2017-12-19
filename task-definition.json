@@ -4,7 +4,7 @@
             "command": "",
             "type": "DOCKER",
             "properties": {
-                "image": "tdgp/stagetos3:latest"
+                "image": "tdgp/gbdx-task-stagedatatos3:latest"
             }
         }
     ],
@@ -19,15 +19,34 @@
         {
             "required": true,
             "type": "string",
+            "description": "AWS Access Key ID that is authorized to push to the s3 location specified in 'directory'.",
+            "name": "access_key_id"
+        },
+        {
+            "required": true,
+            "type": "string",
+            "description": "AWS Secret Access Key.",
+            "name": "secret_key"
+        },
+        {
+            "required": false,
+            "type": "string",
+            "description": "AWS Session Token.  Only required as part of temporary credentials.",
+            "name": "session_token"
+        },
+        {
+            "required": true,
+            "type": "string",
             "description": "full S3 URL where the data will be written.",
             "name": "destination"
         }
     ],
-    "version": "0.0.2",
+    "version": "0.0.1",
+    "taskOwnerEmail": "nricklin@digitalglobe.com",
     "outputPortDescriptors": [],
     "properties": {
         "isPublic": true,
         "timeout": 7200
     },
-    "name": "StageDataToS3"
+    "name": "SaveToS3"
 }

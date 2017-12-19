@@ -1,4 +1,13 @@
-FROM tdgp/stagetos3:v1.0
-COPY docker_utilities/algorithms/common.py /
-COPY docker_utilities/algorithms/stagetos3.py /
-CMD ["python", "/stagetos3.py"]
+FROM alpine:3.7
+
+RUN apk add --update \
+    python \
+    python-dev \
+    py-pip \
+    build-base \
+  && pip install awscli \
+  && rm -rf /var/cache/apk/*
+
+
+ADD task.py /task.py
+CMD python /task.py
