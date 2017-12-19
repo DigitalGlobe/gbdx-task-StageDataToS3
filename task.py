@@ -18,3 +18,7 @@ if session_token:
 cmd = "aws s3 cp /mnt/work/input/data %s --recursive" % destination
 
 proc = subprocess.Popen([cmd], shell=True)
+proc.communicate()
+returncode = proc.wait()
+if returncode != 0:
+    raise Exception('Unable to copy files.')
