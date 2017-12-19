@@ -20,7 +20,7 @@ cmd = "aws s3 cp /mnt/work/input/data %s --recursive" % destination
 retry_counter = 0
 while retry_counter < 3:
     try:
-        subprocess.check_call(shlex.split(args))
+        subprocess.check_call(shlex.split(cmd))
         break
     except Exception as ex:
         print("Attempt {_ct} of 3 aws s3 cp for /mnt/work/input/data failed. Error {_e}.".format(
