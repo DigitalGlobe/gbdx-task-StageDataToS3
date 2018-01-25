@@ -8,7 +8,7 @@
             }
         }
     ],
-    "description": "Stage data from a directory into an S3 bucket",
+    "description": "Stage data from a directory into an S3 bucket.  You must generate temporary AWS credentials & supply them as inputs.",
     "inputPortDescriptors": [
         {
             "required": true,
