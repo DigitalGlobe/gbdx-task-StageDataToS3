@@ -29,9 +29,9 @@
             "name": "secret_key"
         },
         {
-            "required": false,
+            "required": true,
             "type": "string",
-            "description": "AWS Session Token.  Only required as part of temporary credentials.",
+            "description": "AWS Session Token.  Required as part of temporary credentials.",
             "name": "session_token"
         },
         {
