@@ -21,7 +21,7 @@ wf.execute()
 
 
 # Example Getting Temp Creds
-```
+```python
 # First we'll run atmospheric compensation on Landsat8 data
 from gbdxtools import Interface
 gbdx = Interface()
