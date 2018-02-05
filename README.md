@@ -1,6 +1,8 @@
 # gbdx-task-StageDataToS3
 The SaveToS3 task that runs in GBDX: for pushing output data to S3.
 
+The Docker image for this task is auto-built on dockerhub here:  https://hub.docker.com/r/tdgp/gbdx-task-stagedatatos3/
+
 # Simple Example:
 ```python
 from gbdxtools import Interface
