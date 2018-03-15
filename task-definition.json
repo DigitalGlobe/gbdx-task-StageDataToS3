@@ -41,9 +41,9 @@
             "name": "destination"
         }
     ],
-    "version": "0.0.1",
-    "taskOwnerEmail": "nricklin@digitalglobe.com",
+    "version": "0.0.7",
     "outputPortDescriptors": [],
+    "taskOwnerEmail": "nricklin@digitalglobe.com",
     "properties": {
         "isPublic": true,
         "timeout": 7200
