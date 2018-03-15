@@ -8,6 +8,9 @@ access_key_id = input_data['access_key_id']
 secret_key = input_data['secret_key']  
 session_token = input_data['session_token']
 
+if not destination.startswith('s3://'):
+    raise Exception('Error: destination input must start with s3://')
+
 os.environ['AWS_ACCESS_KEY_ID'] = access_key_id
 os.environ['AWS_SECRET_ACCESS_KEY'] = secret_key
 os.environ['AWS_SESSION_TOKEN'] = session_token
