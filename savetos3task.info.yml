@@ -1,0 +1,13 @@
+name: SaveToS3-gbdx_task
+description: Open Source GBDX Task that allows you to push to any S3 bucket with temporary credentials
+source: https://github.com/DigitalGlobe/gbdx-task-StageDataToS3
+team: GBDX Team
+language: python
+
+poc:
+  - name: Nate Ricklin
+    email: nricklin@digitalglobe.com
+
+documentation:
+  - type: external
+    url: https://github.com/DigitalGlobe/gbdx-task-StageDataToS3
